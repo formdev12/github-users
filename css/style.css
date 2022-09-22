@@ -1,0 +1,80 @@
+:root {
+    --main-bg: #78786c;
+    --main-color: white;
+    --bs-navbar-color: white;
+}
+
+.logo_img {
+    width: 50px;
+}
+
+.img.flag-img {
+    width: 32px;
+}
+
+#navbarSupportedContent {
+    gap: 15px;
+}
+
+.wrappers {
+
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: var(--main-bg);
+}
+
+.dropdown-item {
+    color: var(--main-color);
+}
+
+.bg-github {
+    background-color: var(--main-bg);
+}
+
+.loading {
+    width: 100%;
+}
+
+.loading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 540px;
+    align-items: center;
+}
+
+.img-loading {
+    width: 50px;
+}
+
+
+.nav-link {
+    color: var(--main-color);
+}
+
+.filters {
+    color: var(--main-color);
+}
+
+.wrappers {
+    margin-top: 60px;
+}
+
+.pagination {
+    margin-top: 40px;
+}
+
+img.card-img-top {
+    width: 100px;
+    height: 100px;
+}
+
+.d-flex.gt-item {
+    border: 1px solid;
+    border-radius: 9px;
+}
+
+.github-users {
+    gap: 10px;
+}

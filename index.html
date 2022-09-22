@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github users</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-github">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo_img" src="images/github-round.png" alt="githuba">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="d-flex navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Langue
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="images/flags/canada.svg" class="img flag-img" alt="flag">  Canada
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="images/flags/iceland.svg" class="img flag-img" alt="flag">  Iceland
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="images/flags/france.svg" class="img flag-img" alt="flag">  France
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="images/flags/madagascar.svg" class="img flag-img" alt="flag">  Madagascar
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="align-items-center d-flex filters flex-row list-group">
+                    <label for="filter">Filtrer</label>
+                    <select class="form-control" name="perpage" id="filter">
+                        <option>5</option>
+                        <option>10</option>
+                        <option>25</option>
+                        <option>50</option>
+                        <option>100</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container wrappers">
+        <div class="row github-users">
+            <div class="d-flex gt-item">
+                <div class="flex-shrink-0">
+                  <img class="card-img-top" src="images/flags/france.svg" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h6 class="display-5">Card title</h6>
+                  This is some content from a media component. You can replace this with any content and adjust it as needed.
+                </div>
+            </div>
+            <div class="d-flex gt-item">
+                <div class="flex-shrink-0">
+                  <img class="card-img-top" src="images/flags/canada.svg" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h6 class="display-5">Card title</h6>
+                  This is some content from a media component. You can replace this with any content and adjust it as needed.
+                </div>
+            </div>
+            <div class="d-flex gt-item">
+                <div class="flex-shrink-0">
+                  <img class="card-img-top" src="images/flags/iceland.svg" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h6 class="display-5">Card title</h6>
+                  This is some content from a media component. You can replace this with any content and adjust it as needed.
+                </div>
+            </div>
+            <div class="d-flex gt-item">
+                <div class="flex-shrink-0">
+                  <img class="card-img-top" src="images/flags/madagascar.svg" alt="...">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h6 class="display-5">Card title</h6>
+                  This is some content from a media component. You can replace this with any content and adjust it as needed.
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <script src="plugins/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
