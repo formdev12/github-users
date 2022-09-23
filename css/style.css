@@ -24,12 +24,12 @@
     color: var(--main-color);
 }
 
-.bg-github {
-    background-color: var(--main-bg);
+.nav-link:hover, .nav-link:focus {
+    color: var(--main-color);
 }
 
-.loading {
-    width: 100%;
+.bg-github {
+    background-color: var(--main-bg);
 }
 
 .loading {
@@ -73,4 +73,6 @@ img.card-img-top {
 
 .github-users {
     gap: 10px;
+    margin-left: 10px;
+    column-gap: 30px;
 }

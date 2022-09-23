@@ -48,54 +48,45 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="align-items-center d-flex filters flex-row list-group">
-                    <label for="filter">Filtrer</label>
-                    <select class="form-control" name="perpage" id="filter">
-                        <option>5</option>
-                        <option>10</option>
-                        <option>25</option>
-                        <option>50</option>
-                        <option>100</option>
-                    </select>
-                </div>
+            </div>
+            <div class="align-items-center d-flex filters flex-row list-group">
+                <label for="filter">Filtre: </label>
+                <select class="form-control" name="perpage" id="filter">
+                    <option>5</option>
+                    <option>10</option>
+                    <option>25</option>
+                    <option>50</option>
+                    <option>100</option>
+                </select>
             </div>
         </div>
     </nav>
 
     <div class="container wrappers">
         <div class="row github-users">
-            <div class="d-flex gt-item">
-                <div class="flex-shrink-0">
+            <div class="card col-md-4 col-sm-6 gt-item row">
+                <div class="col-xs-4">
                   <img class="card-img-top" src="images/flags/france.svg" alt="...">
                 </div>
-                <div class="flex-grow-1 ms-3">
+                <div class="col-xs-8">
                     <h6 class="display-5">Card title</h6>
                   This is some content from a media component. You can replace this with any content and adjust it as needed.
                 </div>
             </div>
-            <div class="d-flex gt-item">
-                <div class="flex-shrink-0">
-                  <img class="card-img-top" src="images/flags/canada.svg" alt="...">
+            <div class="card col-md-4 col-sm-6 gt-item row">
+                <div class="col-xs-4">
+                  <img class="card-img-top" src="images/flags/france.svg" alt="...">
                 </div>
-                <div class="flex-grow-1 ms-3">
+                <div class="col-xs-8">
                     <h6 class="display-5">Card title</h6>
                   This is some content from a media component. You can replace this with any content and adjust it as needed.
                 </div>
             </div>
-            <div class="d-flex gt-item">
-                <div class="flex-shrink-0">
-                  <img class="card-img-top" src="images/flags/iceland.svg" alt="...">
+            <div class="card col-md-4 col-sm-6 gt-item row">
+                <div class="col-xs-4">
+                  <img class="card-img-top" src="images/flags/france.svg" alt="...">
                 </div>
-                <div class="flex-grow-1 ms-3">
-                    <h6 class="display-5">Card title</h6>
-                  This is some content from a media component. You can replace this with any content and adjust it as needed.
-                </div>
-            </div>
-            <div class="d-flex gt-item">
-                <div class="flex-shrink-0">
-                  <img class="card-img-top" src="images/flags/madagascar.svg" alt="...">
-                </div>
-                <div class="flex-grow-1 ms-3">
+                <div class="col-xs-8">
                     <h6 class="display-5">Card title</h6>
                   This is some content from a media component. You can replace this with any content and adjust it as needed.
                 </div>
@@ -104,14 +95,17 @@
 
         <nav aria-label="Page navigation example" class="d-flex justify-content-center">
             <ul class="pagination">
-              <li class="page-item">
+              <li class="page-item disabled">
                 <a class="page-link" href="#" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                 </a>
               </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
               <li class="page-item"><a class="page-link" href="#">2</a></li>
               <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">10</a></li>
               <li class="page-item">
                 <a class="page-link" href="#" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
@@ -119,8 +113,22 @@
               </li>
             </ul>
         </nav>
+
+        <div class="loading">
+            <img src="images/loading.gif" class="img-loading" alt="">
+        </div>
     </div>
     
     <script src="plugins/bootstrap/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript">
+        const myDropdown = document.getElementById('navbarSupportedContent')
+
+        const nav = document.querySelector('#navbarDropdown')
+
+        myDropdown.addEventListener('click', event => {
+            nav.innerHTML = event.target.innerHTML
+            console.log(event.target.innerText.trim().toLowerCase())
+        })
+    </script>
 </body>
 </html>
